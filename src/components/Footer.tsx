@@ -135,7 +135,7 @@ const Footer = () => {
           <p className="text-muted-foreground">
             © {new Date().getFullYear()} Gladstone Lab. All rights reserved. | Trusted worldwide for quality and excellence.
           </p>
-          <div className="text-muted-foreground text-center mt-3">Maintained by <a className='underline' href="revosystem.vercel.app">Revo System</a> and contributors</div>
+          <div className="text-muted-foreground text-center mt-3">Maintained by <a className='underline' target='_blank' href="https://revosystem.vercel.app">Revo System</a> and contributors</div>
         </div>
       </div>
     </footer>
