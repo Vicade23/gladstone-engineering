@@ -1,11 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gladstone Lab - Professional Laboratory & Engineering Solutions</title>
-    <meta name="description" content="Trusted laboratory and engineering solutions provider. Specializing in lab equipment, chemicals, agricultural facilities, and industrial setups. Led by Ganiyu A Adedokun from Nigeria." />
-    <meta name="author" content="Ganiyu A Adedokun" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billnest - All your cloud bills in one nest</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+      <style>
+          body {
+              font-family: 'Inter', sans-serif;
+              background-color: #FFFFFF;
+              color: #1A1A1A;
+              overflow-x: hidden;
+          }
+          h1, h2, h3, .font-elegant {
+              font-family: 'Plus Jakarta Sans', sans-serif;
+          }
+          .animate-scroll {
+              display: flex;
+              width: max-content;
+              animation: scroll 30s linear infinite;
+          }
+          @keyframes scroll {
+              0% { transform: translateX(0); }
+              100% { transform: translateX(-50%); }
+          }
+          .glass-panel {
+              background: rgba(255, 255, 255, 0.6);
+              backdrop-filter: blur(15px) saturate(180%);
+              -webkit-backdrop-filter: blur(15px) saturate(180%);
+              border: 1px solid rgba(255, 255, 255, 0.3);
+          }
+          
+          /* New Mesh Gradient for Classic Mobile feel */
+          .mesh-gradient-mobile {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: #ffffff;
+              background-image: 
+                  radial-gradient(at 0% 0%, hsla(227,100%,95%,1) 0, transparent 50%), 
+                  radial-gradient(at 50% 0%, hsla(225,100%,98%,1) 0, transparent 50%), 
+                  radial-gradient(at 100% 0%, hsla(227,100%,94%,1) 0, transparent 50%);
+              opacity: 0.6;
+              z-index: -1;
+          }
+
+          .blob-animate-1 {
+              animation: blob-float 20s infinite alternate ease-in-out;
+          }
+          .blob-animate-2 {
+              animation: blob-float-alt 25s infinite alternate ease-in-out;
+          }
+          @keyframes blob-float {
+              0% { transform: translate(0, 0) scale(1); }
+              33% { transform: translate(30px, -50px) scale(1.1); }
+              66% { transform: translate(-20px, 20px) scale(0.9); }
+              100% { transform: translate(0, 0) scale(1); }
+          }
+          @keyframes blob-float-alt {
+              0% { transform: translate(0, 0) scale(1.1); }
+              50% { transform: translate(-40px, 30px) scale(1); }
+              100% { transform: translate(20px, -20px) scale(1.1); }
+          }
+          
+          .stagger-reveal > * {
+              opacity: 0;
+              transform: translateY(20px);
+              animation: reveal-up 0.8s cubic-bezier(0.2, 1, 0.3, 1) forwards;
+          }
+          .stagger-reveal > *:nth-child(1) { animation-delay: 0.1s; }
+          .stagger-reveal > *:nth-child(2) { animation-delay: 0.2s; }
+          .stagger-reveal > *:nth-child(3) { animation-delay: 0.3s; }
+          .stagger-reveal > *:nth-child(4) { animation-delay: 0.4s; }
+
+          @keyframes reveal-up {
+              to {
+                  opacity: 1;
+                  transform: translateY(0);
+              }
+          }
+
+          .simulated-video-scroll {
+              animation: video-scroll 8s infinite ease-in-out;
+          }
+          @keyframes video-scroll {
+              0%, 10% { transform: translateY(0); }
+              20%, 40% { transform: translateY(-80px); }
+              50%, 70% { transform: translateY(-160px); }
+              80%, 100% { transform: translateY(0); }
+          }
+          
+          /* Hide scrollbars for the horizontal slider */
+          .hide-scrollbar::-webkit-scrollbar {
+              display: none;
+          }
+          .hide-scrollbar {
+              -ms-overflow-style: none;
+              scrollbar-width: none;
+          }
+      </style>
+
+      
+        <script type="importmap">
+          {
+            "imports": {
+              "react/": "https://esm.sh/react@^19.2.4/",
+              "react": "https://esm.sh/react@^19.2.4",
+              "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+              "recharts": "https://esm.sh/recharts@^3.7.0",
+              "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+            }
+          }
+        </script>
+
   </head>
 
   <body>

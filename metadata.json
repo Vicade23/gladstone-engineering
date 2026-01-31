@@ -1,0 +1,5 @@
+{
+  "name": "Billnest - Cloud Subscription Manager",
+  "description": "A high-fidelity cloud billing dashboard for managing AWS, Azure, and other subscriptions with a modern, minimalist design inspired by Lark.",
+  "requestFramePermissions": []
+}
