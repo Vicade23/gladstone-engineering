@@ -29,7 +29,7 @@ export const Navbar: React.FC = () => {
           <span className="text-xl font-black tracking-tighter text-[#1A1A1A] font-elegant">BILLNEST</span>
         </div>
 
-        {/* Actions */}
+        {/* actions */}
         <div className="flex items-center gap-6">
           <button className="hidden md:block text-sm font-bold text-gray-500 hover:text-[#2D5BFF] px-6 py-2.5 rounded-xl transition-colors">
             Login
